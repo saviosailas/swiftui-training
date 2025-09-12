@@ -1,2 +1,3 @@
 ### SwiftUI Training
 
+![](/list.gif)
