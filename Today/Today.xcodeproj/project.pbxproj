@@ -6,12 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8554BCB32E92787F00000251 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8554BCAE2E92787F00000251 /* PrivacyInfo.xcprivacy */; };
+		8554BCB42E92787F00000251 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8554BCAD2E92787F00000251 /* Localizable.xcstrings */; };
+		8554BCB52E92787F00000251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8554BCAC2E92787F00000251 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8544EF8F2E6DD31100EA32D8 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8554BCAC2E92787F00000251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8554BCAD2E92787F00000251 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8554BCAE2E92787F00000251 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8544EF912E6DD31100EA32D8 /* Today */ = {
+		8554BCB02E92787F00000251 /* Today */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Today;
 			sourceTree = "<group>";
@@ -32,7 +41,8 @@
 		8544EF862E6DD31100EA32D8 = {
 			isa = PBXGroup;
 			children = (
-				8544EF912E6DD31100EA32D8 /* Today */,
+				8554BCB02E92787F00000251 /* Today */,
+				8554BCC32E927D2500000251 /* Resource */,
 				8544EF902E6DD31100EA32D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +53,16 @@
 				8544EF8F2E6DD31100EA32D8 /* Today.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8554BCC32E927D2500000251 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8554BCAC2E92787F00000251 /* Assets.xcassets */,
+				8554BCAD2E92787F00000251 /* Localizable.xcstrings */,
+				8554BCAE2E92787F00000251 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +81,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8544EF912E6DD31100EA32D8 /* Today */,
+				8554BCB02E92787F00000251 /* Today */,
 			);
 			name = Today;
 			packageProductDependencies = (
@@ -110,6 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8554BCB42E92787F00000251 /* Localizable.xcstrings in Resources */,
+				8554BCB32E92787F00000251 /* PrivacyInfo.xcprivacy in Resources */,
+				8554BCB52E92787F00000251 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +284,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -269,6 +292,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.saviosailas.Today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,7 +313,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,6 +321,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.saviosailas.Today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
