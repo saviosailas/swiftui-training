@@ -41,11 +41,11 @@ class LoginViewModel: ObservableObject {
         if username == "admin" && password == "admin" {
             showHomeScreen = true
         } else {
-            showAlert(title: "Login failed", message: "Invalid email/password combination.")
+            showAlert(title: "loginAlertTitle", message: "loginAlertMessage")
         }
     }
     
-    @MainActor func showAlert(title: String, message: String) {
+    @MainActor func showAlert(title: LocalizedStringKey, message: LocalizedStringKey) {
         alertModel = AlertModel(title: title, message: message, primaryButton: "ok")
         isAlertVisible = true
     }
@@ -54,8 +54,8 @@ class LoginViewModel: ObservableObject {
 
 extension LoginViewModel {
     struct AlertModel {
-        let title: String
-        let message: String
-        let primaryButton: String
+        let title: LocalizedStringKey
+        let message: LocalizedStringKey
+        let primaryButton: LocalizedStringKey
     }
 }

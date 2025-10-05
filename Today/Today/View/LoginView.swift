@@ -129,9 +129,9 @@ struct LoginView: View {
             focussedField = nil
         }
         .alert(isPresented: $viewModel.isAlertVisible) {
-            Alert(title: Text("title"),
-                  message: Text("msg"),
-                  dismissButton: .default(Text("OK"))
+            Alert(title: Text(viewModel.alertModel?.title ?? "failure"),
+                  message: Text(viewModel.alertModel?.message ?? "failureBody"),
+                  dismissButton: .default(Text("ok"))
             )
         }
     }
