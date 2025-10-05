@@ -56,7 +56,6 @@ struct LoginView: View {
                     
                     HStack {
                         ZStack {
-                            
                             TextField(text: $viewModel.password,
                                       prompt: Text(.password),
                                       label: {
@@ -89,13 +88,10 @@ struct LoginView: View {
                                     isPasswordFocused = true
                                 }
                             }
-                        
                     }
                     .background(viewModel.password.isEmpty ? Color.gray.opacity(0.1) : Color.blue.opacity(0.2))
                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
-                    
-                    
-                    
+
                     Button {
                         Task {
                             await MainActor.run {
@@ -119,16 +115,13 @@ struct LoginView: View {
                     
                 })
                 
-                
-                
-                
             }
             .formStyle(.columns)
             
             Spacer()
             
                 .navigationDestination(isPresented: $viewModel.showHomeScreen,
-                                       destination: { HomeView() } ) 
+                                       destination: { HomeView() } )
         }
         .padding(.horizontal)
         .contentShape(Rectangle())
@@ -142,7 +135,6 @@ struct LoginView: View {
             )
         }
     }
- 
     
 }
 

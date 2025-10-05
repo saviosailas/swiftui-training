@@ -37,17 +37,15 @@ class LoginViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    func login() async {
-        try? await Task.sleep(nanoseconds: 500_000_000)
+    @MainActor func login() async {
         if username == "admin" && password == "admin" {
             showHomeScreen = true
         } else {
-            await showAlert(title: "Login failed", message: "Invalid email/password combination.")
+            showAlert(title: "Login failed", message: "Invalid email/password combination.")
         }
     }
     
-    @MainActor
-    func showAlert(title: String, message: String) {
+    @MainActor func showAlert(title: String, message: String) {
         alertModel = AlertModel(title: title, message: message, primaryButton: "ok")
         isAlertVisible = true
     }
